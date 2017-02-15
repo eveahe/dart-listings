@@ -8,7 +8,7 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 25px;
-  background-color: black;
+  background-color: white;
   color: #BBBBBB;
 }
 
@@ -19,7 +19,7 @@ body a {
 h4 {
   font-weight: bold;
   font-size: 20px;
-  color: white;
+  color: black;
   display:inline;
 }
 

@@ -22,16 +22,18 @@ var charts;
 // The next step is to create charts from the data passed to '/charts'. This happens in the `public/client.js` file.
 //
 GoogleSpreadsheets({
-    key: "1wz29qFmSVUoUpcxZzwPgyamrfXTjN8cnqydPW8N6XAg"
+    key: "1x1MvUF-dr_kuAMwAa9pLixZHdyoZD_HXI8YW-01KiQY"
 }, function(err, spreadsheet) {
     spreadsheet.worksheets[0].cells({
         // grab all the data
-        range: "R1C1:R21C10"
+        range: "R1C1:R2C3"
     }, function(err, result) {
     	// Put in-memory store for now
       charts = result.cells;
     });
 });
+
+//New key: 1x1MvUF-dr_kuAMwAa9pLixZHdyoZD_HXI8YW-01KiQY
 
 app.use(express.static('public'));
 

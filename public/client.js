@@ -53,3 +53,23 @@
 //     }
 //   });
 // });
+
+// $("#searchTrends").on("click", function(){
+//   reset();
+  
+//   if (trendyTerms.length === 0) {
+//     return $.getJSON('/trends', function(data){
+//       $.each(data, function(key, value){
+//         trendyTerms.push(value.title[0]);    
+//       });
+      
+//       searchPublicDataForRandomTerm();
+//     });
+//   }
+  
+//   searchPublicDataForRandomTerm();
+// });
+
+function writeEventsData(){
+  for each
+}

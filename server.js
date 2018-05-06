@@ -5,7 +5,7 @@
 var express = require('express');
 var app = express();
 var GoogleSpreadsheets = require("google-spreadsheets");
-var charts;
+var events;
 
 //
 // Step 1: Loading the Data
@@ -26,14 +26,14 @@ GoogleSpreadsheets({
 }, function(err, spreadsheet) {
     spreadsheet.worksheets[0].cells({
         // grab all the data
-        range: "R1C1:R2C3"
+        //could add in range if i only wanted some of it
     }, function(err, result) {
     	// Put in-memory store for now
-      charts = result.cells;
+      events = result.cells;
     });
 });
 
-//New key: 1x1MvUF-dr_kuAMwAa9pLixZHdyoZD_HXI8YW-01KiQY
+//https://docs.google.com/spreadsheets/d/1x1MvUF-dr_kuAMwAa9pLixZHdyoZD_HXI8YW-01KiQY/edit?usp=sharing
 
 app.use(express.static('public'));
 
@@ -41,8 +41,8 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
-app.get("/charts", function (request, response) {
-  response.send(charts);
+app.get("/events", function (request, response) {
+  response.send(events);
 });
 
 // listen for requests :)

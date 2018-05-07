@@ -70,6 +70,13 @@
 //   searchPublicDataForRandomTerm();
 // });
 
+var dartEvent = "";
+
+
 function writeEventsData(){
-  for each
-}
+  $.getJSON('/events', function(data){
+    $.each(data, function(key,value){
+      console.log(value[1]);
+    })})}
+
+writeEventsData();

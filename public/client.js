@@ -72,12 +72,18 @@
 
 var dartEvent = "";
 
+var dartDate = "";
+
+function checkDates(dartDate){
+  if(dartDate != "Date"){
+  }
+}
 
 function writeEventsData(){
   $.getJSON('/events', function(data){
     $.each(data, function(key,value){
-      console.log(value[1]);
-      $("#testDate").append(value[1])
+      dartDate = value[1].value;
+      $("#testDate").append("<li>" + dartDate + "</li>")
     })})}
 
 writeEventsData();

@@ -24,7 +24,7 @@ function writeEventsData(){
       //Write Event Date!!
       dartDate = value[1].value;
       if(checkDates(dartDate)){
-        $("#eventdetails").append("<p>" + dartDate + "</p>").addClass("testDateFormat");
+        $("#eventdetails").append(dartDate).addClass("testDateFormat");
         
       //Write Event Name!! 
       dartName = value[2].value;

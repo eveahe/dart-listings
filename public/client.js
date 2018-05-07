@@ -35,14 +35,14 @@ function writeEventsData(){
       $("#eventdetails").append("<br>" + dartLocale)
         
         //This is commented out until I figure out how to handle nulls.
-//       //Write Event Description!! 
-//       dartDescription = value[4].value;
-//       $("#testDescription").append("<li>" + dartDescription + "</li>")
+      //Write Event Description!! 
+      dartDescription = value[4].value;
+      $("#eventdetails").append("<br>" + dartDescription)
         
       //Write Event Link!! 
       dartLink = value[5].value;
       console.log(dartLink);
-      $("#eventdetails").append('"<br><a href="https://'+ dartLink + '">' + dartLink + '</a><br><br>')
+      $("#eventdetails").append('<br><a href="https://'+ dartLink + '">' + dartLink + '</a><br><br>');
       }//End CheckDates
     })})}
 
@@ -51,4 +51,6 @@ writeEventsData();
 /* To Do 
 - Understand how laggy this is, and what the lag is exactly!! Seems to be slow to update from GSheets.
 - Need to validate whether the links have https in them or not!
+- Figure out how to handle null cells!
+- Do I want to do an order by for dates in the google spreadsheet, or in the application?
 */

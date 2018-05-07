@@ -75,7 +75,7 @@ var dartDate = "";
 
 function checkDates(dartDate){
   if(dartDate != "Date"){
-    moment.format(dartDate)
+    //moment.format(dartDate)
   }
 }
 
@@ -83,6 +83,7 @@ function writeEventsData(){
   $.getJSON('/events', function(data){
     $.each(data, function(key,value){
       dartDate = value[1].value;
+      console.log(key, value);
       $("#testDate").append("<li>" + dartDate + "</li>")
     })})}
 

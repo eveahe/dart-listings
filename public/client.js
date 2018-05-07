@@ -5,7 +5,7 @@ var dartDate = "";
 
 function checkDates(dartDate){
   if(dartDate != "Date"){
-    formatDate(dartDate);
+    Date(dartDate);
   }
 }
 

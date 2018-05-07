@@ -23,14 +23,9 @@ h4 {
   display:inline;
 }
 
-#charts span {
-  position: absolute;
+#testDateFormat{
+  color: blue;
 }
-
-#charts span img {
-  border: 1px solid #c0c0c0;
-}
-
 footer {
   margin-top: 50px;
   padding-top: 25px;

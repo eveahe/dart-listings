@@ -24,20 +24,21 @@ function writeEventsData(){
       //Write Event Date!!
       dartDate = value[1].value;
       if(checkDates(dartDate)){
-        $("#eventdetails").append(dartDate)
+        $("#eventdetails").append("<p>" + dartDate + "</p>").addClass("testDateFormat");
         
       //Write Event Name!! 
       dartName = value[2].value;
-      $("#eventdetails").append("<br>" + dartName)
+      $("#eventdetails").append("<br>" + dartName);
+      
         
       //Write Event Locale!! 
       dartLocale = value[3].value;
-      $("#eventdetails").append("<br>" + dartLocale)
+      $("#eventdetails").append("<br>" + dartLocale);
         
         //This is commented out until I figure out how to handle nulls.
       //Write Event Description!! 
       dartDescription = value[4].value;
-      $("#eventdetails").append("<br>" + dartDescription)
+      $("#eventdetails").append("<br>" + dartDescription);
         
       //Write Event Link!! 
       dartLink = value[5].value;
@@ -53,4 +54,6 @@ writeEventsData();
 - Need to validate whether the links have https in them or not!
 - Figure out how to handle null cells!
 - Do I want to do an order by for dates in the google spreadsheet, or in the application?
+- Figure out how to select and stylize components of the event details, maybe through a json add class situation??
+- Fix the spaces with <p> paragraph breaks rather than <br>
 */

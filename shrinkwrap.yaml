@@ -1,6 +1,7 @@
 dependencies:
   express: 4.16.3
   google-spreadsheets: 1.0.0
+  moment: 2.22.1
 packages:
   /accepts/1.3.5:
     dependencies:
@@ -465,6 +466,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-KI1+qOZu5DcW6wayYHSzR/tXKCDC5Om4s1z2QJjDULzLcmf3DvzS7oluY4HCTrc+9FiKmWUgeNLg7W3uIQvxtQ==
+  /moment/2.22.1:
+    dev: false
+    resolution:
+      integrity: sha512-shJkRTSebXvsVqk56I+lkb2latjBs8I+pc2TzWc545y2iFnSjm7Wg0QMh+ZWcdSLQyGEau5jI8ocnmkyTgr9YQ==
   /ms/2.0.0:
     dev: false
     resolution:
@@ -719,3 +724,4 @@ shrinkwrapVersion: 3
 specifiers:
   express: ^4.12.4
   google-spreadsheets: '*'
+  moment: ^2.22.1

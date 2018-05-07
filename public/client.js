@@ -69,13 +69,13 @@
   
 //   searchPublicDataForRandomTerm();
 // });
-
 var dartEvent = "";
 
 var dartDate = "";
 
 function checkDates(dartDate){
   if(dartDate != "Date"){
+    moment.format(dartDate)
   }
 }
 

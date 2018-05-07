@@ -28,18 +28,21 @@ function writeEventsData(){
         
       //Write Event Name!! 
       dartName = value[2].value;
-      console.log(dartName);
       $("#testName").append("<li>" + dartName + "</li>")
         
       //Write Event Locale!! 
       dartLocale = value[3].value;
-      console.log(dartLocale);
       $("#testLocale").append("<li>" + dartLocale + "</li>")
         
-      //Write Event Description!! 
-      dartDescription = value[4].value;
-      console.log(dartDescription);
-      $("#testDescription").append("<li>" + dartDescription + "</li>")
+        //This is commented out until I figure out how to handle nulls.
+//       //Write Event Description!! 
+//       dartDescription = value[4].value;
+//       $("#testDescription").append("<li>" + dartDescription + "</li>")
+        
+      //Write Event Link!! 
+      dartLink = value[5].value;
+      console.log(dartLink);
+      $("#testLink").append('<li><a href="https://'+ dartLink + '">' + dartLink + '</a></li>')
       }//End CheckDates
     })})}
 
@@ -47,4 +50,5 @@ writeEventsData();
 
 /* To Do 
 - Understand how laggy this is, and what the lag is exactly!! Seems to be slow to update from GSheets.
+- Need to validate whether the links have https in them or not!
 */

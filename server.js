@@ -3,7 +3,6 @@
 
 // init project
 var express = require('express');
-var moment = require('moment');
 var app = express();
 var GoogleSpreadsheets = require("google-spreadsheets");
 var events;
@@ -34,8 +33,3 @@ app.get("/events", function (request, response) {
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
-
-//Formatting the dates.
-function formatDate(date){
-  moment.format(date);
-}

@@ -24,15 +24,15 @@ function writeEventsData(){
       //Write Event Date!!
       dartDate = value[1].value;
       if(checkDates(dartDate)){
-        $("#testDate").append("<li>" + dartDate + "</li>")
+        $("#eventdetails").append(dartDate)
         
       //Write Event Name!! 
       dartName = value[2].value;
-      $("#testName").append("<li>" + dartName + "</li>")
+      $("#eventdetails").append("<br>" + dartName)
         
       //Write Event Locale!! 
       dartLocale = value[3].value;
-      $("#testLocale").append("<li>" + dartLocale + "</li>")
+      $("#eventdetails").append("<br>" + dartLocale)
         
         //This is commented out until I figure out how to handle nulls.
 //       //Write Event Description!! 
@@ -42,7 +42,7 @@ function writeEventsData(){
       //Write Event Link!! 
       dartLink = value[5].value;
       console.log(dartLink);
-      $("#testLink").append('<li><a href="https://'+ dartLink + '">' + dartLink + '</a></li>')
+      $("#eventdetails").append('"<br><a href="https://'+ dartLink + '">' + dartLink + '</a><br><br>')
       }//End CheckDates
     })})}
 

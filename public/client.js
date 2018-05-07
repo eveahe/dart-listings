@@ -82,9 +82,9 @@ function checkDates(dartDate){
 function writeEventsData(){
   $.getJSON('/events', function(data){
     $.each(data, function(key,value){
-      dartDate = value[1].value;
-      console.log(key, value);
-      $("#testDate").append("<li>" + dartDate + "</li>")
+      console.log(data[1]);
+      // dartDate = value[1].value;
+      // $("#testDate").append("<li>" + dartDate + "</li>")
     })})}
 
 writeEventsData();

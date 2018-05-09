@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: monospace;
   margin: 25px;
   background-color: white;
   color: #BBBBBB;
@@ -28,7 +28,7 @@ h4 {
   color: blue;
 }
 
-#eventdetails {
+#eventDetails {
   font-family: monospace;
 }
 

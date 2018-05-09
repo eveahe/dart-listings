@@ -7,6 +7,7 @@ var dartLocale = "";
 var dartDescription = "";
 var dartLink = "";
 var formattedDate = "";
+var startNum = 0;
 var currentTime = new Date();
 
 //Writing an event date only if it is in the future
@@ -24,11 +25,11 @@ function writeEventsData(){
       //Write Event Date!!
       dartDate = value[1].value;
       if(checkDates(dartDate)){
-        $("#eventDetails").append(dartDate).addClass("testDateFormat");
+      $("#eventDetails").append(dartDate);
         
       //Write Event Name!! 
       dartName = value[2].value;
-      $("#eventDetails").append("<br>" + dartName);
+      $("#testName").append("<br>" + dartName);
       
         
       //Write Event Locale!! 
@@ -42,7 +43,7 @@ function writeEventsData(){
         
       //Write Event Link!! 
       dartLink = value[5].value;
-      $("#eventDetails").append('<br><a href="https://'+ dartLink + '">' + dartLink + '</a><br><br>');
+      $("#eventDetails").append('<br><a href="https://'+ dartLink + '"> link</a><br><br>');
       }//End CheckDates
     })})}
 
@@ -50,6 +51,7 @@ function writeEventsData(){
 
 function reset(){
   $("#eventDetails").empty();
+  $("#testName").empty();
 }
 
 $("#reloadEvents").on("click", function(){

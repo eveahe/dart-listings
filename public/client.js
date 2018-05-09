@@ -39,11 +39,11 @@ function writeEventsData(){
         //This is commented out until I figure out how to handle nulls.
       //Write Event Description!! 
       dartDescription = value[4].value;
-      $("#eventDetails").append("<br>" + dartDescription);
+      $("#eventDetails").append("<div class='eventDescription'>" + dartDescription + "</div>");
         
       //Write Event Link!! 
       dartLink = value[5].value;
-      $("#eventDetails").append('<br><a href="https://'+ dartLink + '"> link</a><br><br>');
+      $("#eventDetails").append('<div class="eventLink"><a href=' + dartLink + '> link</a><br><br></div>');
       }//End CheckDates
     })})}
 

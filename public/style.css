@@ -9,11 +9,6 @@ body {
   font-family: monospace;
   margin: 25px;
   background-color: white;
-  color: #BBBBBB;
-}
-
-body a {
-  color: #BBBBBB;
 }
 
 h4 {
@@ -30,6 +25,8 @@ h4 {
 
 #eventDetails {
   font-family: monospace;
+  color: black;
+  
 }
 
 .eventDate {
@@ -39,6 +36,16 @@ h4 {
 .eventName {
   color: cornflowerblue;
 }
+
+.eventDescription {
+  font-size: 12px;
+}
+
+.eventLink > a {
+  color: black;
+}
+
+
 
 button {
   margin-top: 25px;
@@ -52,6 +59,26 @@ footer {
   border-top: 1px solid lightgrey;
 }
 
-footer > a {
+/* footer > a {
   color: #BBBBBB;
+} */
+
+.eventLink {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.eventLink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.eventLink:hover::after {
+    width: 100%;
+    transition: width .3s;
 }

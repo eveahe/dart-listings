@@ -32,6 +32,14 @@ h4 {
   font-family: monospace;
 }
 
+.eventDate {
+  font-size: 16px;
+}
+
+.eventName {
+  color: cornflowerblue;
+}
+
 button {
   margin-top: 25px;
   margin-bottom: 25px;

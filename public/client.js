@@ -8,7 +8,6 @@ var dartDescription = "";
 var dartLink = "";
 var formattedDate = "";
 var counter = 0;
-var eventDetails;
 var currentTime = new Date();
 
 //Writing an event date only if it is in the future
@@ -26,18 +25,16 @@ function writeEventsData(){
       //Write Event Date!!
       dartDate = value[1].value;
       if(checkDates(dartDate)){
-      ev
-      $("#eventDetails").append(dartDate);
+      //Write Event Dates!!
+      $("#eventDetails").append("<div class='eventDate'>" + dartDate + "</div>");
         
       //Write Event Name!! 
       dartName = value[2].value;
-      $("testElement" + counter).append("<br>" + dartName);
-      //$("#testName").append("<br>" + dartName);
-      
-        
+      $("#eventDetails").append("<div class='eventName'>" + dartName + "</div>");
+       
       //Write Event Locale!! 
       dartLocale = value[3].value;
-      $("#eventDetails").append("<br>" + dartLocale);
+      $("#eventDetails").append("<div class='eventLocale'>" + dartLocale + "</div>");
         
         //This is commented out until I figure out how to handle nulls.
       //Write Event Description!! 

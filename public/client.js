@@ -42,7 +42,6 @@ function writeEventsData(){
         
       //Write Event Link!! 
       dartLink = value[5].value;
-      console.log(dartLink);
       $("#eventDetails").append('<br><a href="https://'+ dartLink + '">' + dartLink + '</a><br><br>');
       }//End CheckDates
     })})}

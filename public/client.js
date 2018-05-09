@@ -7,7 +7,8 @@ var dartLocale = "";
 var dartDescription = "";
 var dartLink = "";
 var formattedDate = "";
-var startNum = 0;
+var counter = 0;
+var eventDetails;
 var currentTime = new Date();
 
 //Writing an event date only if it is in the future
@@ -25,11 +26,13 @@ function writeEventsData(){
       //Write Event Date!!
       dartDate = value[1].value;
       if(checkDates(dartDate)){
+      ev
       $("#eventDetails").append(dartDate);
         
       //Write Event Name!! 
       dartName = value[2].value;
-      $("#testName").append("<br>" + dartName);
+      $("testElement" + counter).append("<br>" + dartName);
+      //$("#testName").append("<br>" + dartName);
       
         
       //Write Event Locale!! 

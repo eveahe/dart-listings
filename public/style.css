@@ -17,16 +17,23 @@ body a {
 }
 
 h4 {
+  font-family: monospace;
   font-weight: bold;
   font-size: 20px;
-  color: black;
+  color: pink;
   display:inline;
 }
 
 #testDateFormat{
   color: blue;
 }
+
+#eventdetails {
+  font-family: monospace;
+}
+
 footer {
+  font-family: monospace;
   margin-top: 50px;
   padding-top: 25px;
   border-top: 1px solid lightgrey;

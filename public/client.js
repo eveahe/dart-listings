@@ -24,30 +24,39 @@ function writeEventsData(){
       //Write Event Date!!
       dartDate = value[1].value;
       if(checkDates(dartDate)){
-        $("#eventdetails").append(dartDate).addClass("testDateFormat");
+        $("#eventDetails").append(dartDate).addClass("testDateFormat");
         
       //Write Event Name!! 
       dartName = value[2].value;
-      $("#eventdetails").append("<br>" + dartName);
+      $("#eventDetails").append("<br>" + dartName);
       
         
       //Write Event Locale!! 
       dartLocale = value[3].value;
-      $("#eventdetails").append("<br>" + dartLocale);
+      $("#eventDetails").append("<br>" + dartLocale);
         
         //This is commented out until I figure out how to handle nulls.
       //Write Event Description!! 
       dartDescription = value[4].value;
-      $("#eventdetails").append("<br>" + dartDescription);
+      $("#eventDetails").append("<br>" + dartDescription);
         
       //Write Event Link!! 
       dartLink = value[5].value;
       console.log(dartLink);
-      $("#eventdetails").append('<br><a href="https://'+ dartLink + '">' + dartLink + '</a><br><br>');
+      $("#eventDetails").append('<br><a href="https://'+ dartLink + '">' + dartLink + '</a><br><br>');
       }//End CheckDates
     })})}
 
-writeEventsData();
+
+
+function reset(){
+  $("#eventDetails").empty();
+}
+
+$("#eventDetails").on("click", function(){
+  reset();
+  writeEventsData();
+}
 
 /* To Do 
 - Understand how laggy this is, and what the lag is exactly!! Seems to be slow to update from GSheets.

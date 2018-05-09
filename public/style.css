@@ -32,6 +32,11 @@ h4 {
   font-family: monospace;
 }
 
+button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 footer {
   font-family: monospace;
   margin-top: 50px;

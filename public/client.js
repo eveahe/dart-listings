@@ -53,14 +53,13 @@ function reset(){
   $("#eventDetails").empty();
 }
 
-$("#eventDetails").on("click", function(){
+$("#reloadEvents").on("click", function(){
   reset();
   writeEventsData();
-}
+})
 
 /* To Do 
 - Understand how laggy this is, and what the lag is exactly!! Seems to be slow to update from GSheets.
-- Need to validate whether the links have https in them or not!
 - Figure out how to handle null cells!
 - Do I want to do an order by for dates in the google spreadsheet, or in the application?
 - Figure out how to select and stylize components of the event details, maybe through a json add class situation??

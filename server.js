@@ -15,6 +15,7 @@ GoogleSpreadsheets({
     }, function(err, result) {
     	// Put in-memory store for now
       events = result.cells;
+      console.log("testing this out!");
     });
 });
 

@@ -67,6 +67,7 @@ footer {
     display: inline-block;
     color: #000;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .eventLink::after {
@@ -76,9 +77,11 @@ footer {
     height: 2px;
     background: #000;
     transition: width .3s;
+    text-decoration: none;
 }
 
 .eventLink:hover::after {
     width: 100%;
     transition: width .3s;
+    text-decoration: none;
 }

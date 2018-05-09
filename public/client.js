@@ -43,7 +43,7 @@ function writeEventsData(){
         
       //Write Event Link!! 
       dartLink = value[5].value;
-      $("#eventDetails").append('<div class="eventLink"><a href=' + dartLink + '> link</a><br><br></div>');
+      $("#eventDetails").append('<div class="eventLink"><a href=' + dartLink + '> link</a></div>');
       }//End CheckDates
     })})}
 
@@ -61,6 +61,7 @@ $("#reloadEvents").on("click", function(){
 
 /* To Do 
 - Understand how laggy this is, and what the lag is exactly!! Seems to be slow to update from GSheets.
+- Try to figure out how to get rid of the underline on links
 - Figure out how to handle null cells!
 - Do I want to do an order by for dates in the google spreadsheet, or in the application?
 - Figure out how to select and stylize components of the event details, maybe through a json add class situation??

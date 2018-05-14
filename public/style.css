@@ -11,6 +11,12 @@ body {
   background-color: white;
 }
 
+h1 {
+  font-size:60px;
+  margin:30px;
+/*   padding:24px; */
+} 
+
 h3 {
   color: #373fff
 }
@@ -81,7 +87,7 @@ footer {
     transition: width .3s;
     text-decoration: none;
 }
-
+/* 
 /* test font bulge */
 .FontBulge:hover {
   -webkit-animation: FontBulge 1s;
@@ -116,9 +122,4 @@ footer {
   margin-top: 70px;
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-h1 {
-  font-size:60px;
-  margin:30px;
-  padding:24px;
 }

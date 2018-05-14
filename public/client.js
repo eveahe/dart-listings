@@ -66,6 +66,4 @@ writeEventsData();
 - Try to figure out how to get rid of the underline on links
 - Figure out how to handle null cells!
 - Do I want to do an order by for dates in the google spreadsheet, or in the application?
-- Figure out how to select and stylize components of the event details, maybe through a json add class situation??
-- Fix the spaces with <p> paragraph breaks rather than <br>
 */

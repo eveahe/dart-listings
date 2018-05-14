@@ -49,15 +49,17 @@ function writeEventsData(){
 
 
 
-function reset(){
-  $("#eventDetails").empty();
-  $("#testName").empty();
-}
+// function reset(){
+//   $("#eventDetails").empty();
+//   $("#testName").empty();
+// }
 
-$("#reloadEvents").on("click", function(){
-  reset();
-  writeEventsData();
-})
+writeEventsData();
+
+// $("#reloadEvents").on("click", function(){
+//   reset();
+//   writeEventsData();
+// })
 
 /* To Do 
 - Understand how laggy this is, and what the lag is exactly!! Seems to be slow to update from GSheets.

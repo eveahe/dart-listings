@@ -38,8 +38,8 @@ function writeEventsData(){
         
         //This is commented out until I figure out how to handle nulls.
       //Write Event Description!! 
-      dartDescription = value[4].value;
-      $("#eventDetails").append("<div class='eventDescription'>" + dartDescription + "</div>");
+      // dartDescription = value[4].value;
+      // $("#eventDetails").append("<div class='eventDescription'>" + dartDescription + "</div>");
         
       //Write Event Link!! 
       dartLink = value[5].value;

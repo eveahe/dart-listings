@@ -11,12 +11,8 @@ body {
   background-color: white;
 }
 
-h4 {
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 20px;
-  color: pink;
-  display:inline;
+h3 {
+  color: #373fff
 }
 
 #eventDetails {

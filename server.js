@@ -19,7 +19,6 @@ GoogleSpreadsheets({
     });
 });
 
-
 app.use(express.static('public'));
 
 app.get("/", function (request, response) {

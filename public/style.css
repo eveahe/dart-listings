@@ -87,7 +87,8 @@ footer {
     transition: width .3s;
     text-decoration: none;
 }
-/* 
+
+
 /* test font bulge */
 .FontBulge:hover {
   -webkit-animation: FontBulge 1s;

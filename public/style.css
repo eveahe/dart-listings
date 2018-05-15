@@ -18,11 +18,12 @@ body {
   border-width: 1px;
   padding: 10px;
   margin-right: 10px;
+  max-width:500px;
   box-shadow: 5px 10px #888888;
 }
 
 h1 {
-  font-size:60px;
+  font-size:80px;
   margin:30px;
   font-family: 'Plaster', cursive;
 /*   padding:24px; */
@@ -104,6 +105,20 @@ a {
     transition: width .3s;
     text-decoration: none;
 } */
+
+/* test animation for the second header */
+@keyframes example {
+    0%   {background-color:#373fff; left:0px; top:0px;}
+    25%  {background-color:cornflowerblue; left:200px; top:0px;}
+    50%  {background-color:yellow; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.testAnimation {
+  animation-name: example;
+  animation-duration: 4s;
+}
 
 
 /* test font bulge */

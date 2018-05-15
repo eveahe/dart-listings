@@ -19,7 +19,7 @@ body {
   border-radius: 20px 20px;
   padding: 10px;
   margin-right: 10px;
-  max-width:500px;
+  max-width:50%;
   box-shadow: 5px 10px #888888;
 }
 
@@ -66,6 +66,7 @@ footer {
   margin-top: 50px;
   padding-top: 25px;
   border-top: 1px solid lightgrey;
+  max-width: 50%;
 }
 
 a {
@@ -118,14 +119,14 @@ a {
 } */
 
 .testAnimation {
-  max-width: 500px;
   background-color: yellow;
   box-shadow: 5px 10px #888888;
 /*   animation-name: example;
   animation-duration: 12s; */
-  border-radius: 50px 20px;
-  margin-top: 5px;
-  padding: 10px
+  border-radius: 20px 20px;
+  margin-top: 10px;
+  padding: 10px;
+  max-width: 50%;
 }
 
 .testTitle{
@@ -133,7 +134,7 @@ a {
   box-shadow: 5px 10px #888888;
   border-radius: 20px 20px;
   border: 1px solid red;
-  max-width: 500px;
+  max-width: 50%;
 }
 
 /* test font bulge */

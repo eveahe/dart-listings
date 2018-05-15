@@ -1,6 +1,16 @@
 /* styles */
 /* called by your view template */
 
+/*Designing for cell phones*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

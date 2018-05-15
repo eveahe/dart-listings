@@ -11,6 +11,7 @@ var events;
 GoogleSpreadsheets({
     key: "1x1MvUF-dr_kuAMwAa9pLixZHdyoZD_HXI8YW-01KiQY"
 }, function(err, spreadsheet) {
+    console.log("testing this out too");
     spreadsheet.worksheets[0].cells({
     }, function(err, result) {
     	// Put in-memory store for now
@@ -18,9 +19,11 @@ GoogleSpreadsheets({
     });
 });
 
-setInterval(function() {
-    console.log('Hello hi');
-}, 60 * 1000); // 60 * 1000 milsec
+function myFunction () {
+    console.log('Executed!');
+}
+
+var interval = setInterval(function () { myFunction(); }, 60000);
 
 app.use(express.static('public'));
 

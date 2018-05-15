@@ -43,7 +43,7 @@ function writeEventsData(){
         
       //Write Event Link!! 
       dartLink = value[5].value;
-      $("#eventDetails").append("<div class='eventLink'><a href='" + dartLink + "'>link</a></div>");
+      $("#eventDetails").append("<div class='eventLink'><a href='" + dartLink + "'>check it</a></div>");
       }//End CheckDates
     })})}
 

@@ -56,6 +56,10 @@ footer {
   border-top: 1px solid lightgrey;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* footer > a {
   color: #BBBBBB;
 } */

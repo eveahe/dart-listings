@@ -67,6 +67,6 @@ writeEventsData();
 - Continue working on designs....?
 - Figure out how to handle null cells!
 - Do I want to do an order by for dates in the google spreadsheet, or in the application?
-- Make sure the title scales properly on cellphones, etc.
+- Make sure the title scales properly on cellphones, etc. The problem is the fontbulge class shouldn't be there for smaller screens(!)
 - See if I can make the dates add to calendar links.
 */

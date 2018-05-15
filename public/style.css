@@ -16,6 +16,7 @@ body {
   border-color: silver;
   border-style: solid;
   border-width: 1px;
+  border-radius: 20px 20px;
   padding: 10px;
   margin-right: 10px;
   max-width:500px;
@@ -118,12 +119,22 @@ a {
 
 .testAnimation {
   max-width: 500px;
-  animation-name: example;
-  animation-duration: 12s;
-  border-radius: 25px;
+  background-color: yellow;
+  box-shadow: 5px 10px #888888;
+/*   animation-name: example;
+  animation-duration: 12s; */
+  border-radius: 50px 20px;
+  margin-top: 5px;
   padding: 10px
 }
 
+.testTitle{
+  background-color: pink;
+  box-shadow: 5px 10px #888888;
+  border-radius: 20px 20px;
+  border: 1px solid red;
+  max-width: 500px;
+}
 
 /* test font bulge */
 .FontBulge:hover {

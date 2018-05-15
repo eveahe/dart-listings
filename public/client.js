@@ -64,7 +64,7 @@ writeEventsData();
 
 /* To Do 
 - Understand how laggy this is, and what the lag is exactly!! Seems to be slow to update from GSheets. (It's not that it's slow, it's that it only loads when I restart the server...)
-- Try to figure out how to get rid of the underline on links
+- Continue working on designs....?
 - Figure out how to handle null cells!
 - Do I want to do an order by for dates in the google spreadsheet, or in the application?
 */

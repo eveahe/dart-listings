@@ -23,6 +23,7 @@ body {
 }
 
 h1 {
+  color: #373fff;
   font-size:80px;
   margin:30px;
   font-family: 'Plaster', cursive;
@@ -31,7 +32,7 @@ h1 {
 
 h3 {
   color: #373fff;
- font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Code Pro', monospace;
 }
 
 #eventDetails {
@@ -107,17 +108,20 @@ a {
 } */
 
 /* test animation for the second header */
-@keyframes example {
-    0%   {background-color:#373fff; left:0px; top:0px;}
-    25%  {background-color:cornflowerblue; left:200px; top:0px;}
-    50%  {background-color:yellow; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
+/* @keyframes example {
+    0%   {background-color:#373fff}
+    25%  {background-color:#5e65ff}
+    50%  {background-color:#858aff}
+    75%  {background-color:#adb0ff}
+    100% {background-color:#d4d6ff}
+} */
 
 .testAnimation {
+  max-width: 500px;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 12s;
+  border-radius: 25px;
+  padding: 10px
 }
 
 

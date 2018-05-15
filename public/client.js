@@ -30,7 +30,11 @@ function writeEventsData(){
         
       //Write Event Name!! 
       dartName = value[2].value;
-      $("#eventDetails").append("<div class='eventName'>" + dartName + "</div>");
+//    $("#eventDetails").append("<div class='eventName'>" + dartName + "</div>");
+        
+      //Write Event Link!! 
+      dartLink = value[5].value;
+      $("#eventDetails").append("<div class='eventLink eventName'><a href='" + dartLink + "'>" + dartName + "</a></div>");
        
       //Write Event Locale!! 
       dartLocale = value[3].value;
@@ -41,9 +45,6 @@ function writeEventsData(){
       // dartDescription = value[4].value;
       // $("#eventDetails").append("<div class='eventDescription'>" + dartDescription + "</div>");
         
-      //Write Event Link!! 
-      dartLink = value[5].value;
-      $("#eventDetails").append("<div class='eventLink'><a href='" + dartLink + "'>check it</a></div>");
       }//End CheckDates
     })})}
 

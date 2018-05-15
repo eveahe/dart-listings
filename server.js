@@ -18,6 +18,10 @@ GoogleSpreadsheets({
     });
 });
 
+setInterval(function() {
+    console.log('Hello hi');
+}, 60 * 1000); // 60 * 1000 milsec
+
 app.use(express.static('public'));
 
 app.get("/", function (request, response) {

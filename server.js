@@ -18,7 +18,7 @@ GoogleSpreadsheets({
     });
 });
 
-var interval = setInterval(function () {console.log("test")}, 60000);
+var interval = setInterval(function (){console.log("test")}, 60000);
 
 app.use(express.static('public'));
 

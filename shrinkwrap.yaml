@@ -1,4 +1,5 @@
 dependencies:
+  async: 2.6.0
   express: 4.16.3
   google-spreadsheets: 1.0.0
   moment: 2.22.1
@@ -35,6 +36,12 @@ packages:
       node: '>=0.8'
     resolution:
       integrity: sha1-8S4PPF13sLHN2RRpQuTpbB5N1SU=
+  /async/2.6.0:
+    dependencies:
+      lodash: 4.17.10
+    dev: false
+    resolution:
+      integrity: sha512-xAfGg1/NTLBBKlHFmnd7PlmUW9KhVQIUuSrYem9xzFUZy13ScvtyGGejaae9iAVRiRq9+Cx7DPFaAAhCpyxyPw==
   /asynckit/0.4.0:
     dev: false
     resolution:
@@ -432,6 +439,10 @@ packages:
       '0': node >=0.6.0
     resolution:
       integrity: sha1-MT5mvB5cwG5Di8G3SZwuXFastqI=
+  /lodash/4.17.10:
+    dev: false
+    resolution:
+      integrity: sha512-UejweD1pDoXu+AD825lWwp4ZGtSwgnpZxb3JDViD7StjQz+Nb/6l093lx4OQ0foGWNRoc19mWy7BzL+UAK2iVg==
   /media-typer/0.3.0:
     dev: false
     engines:
@@ -722,6 +733,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 5
 shrinkwrapVersion: 3
 specifiers:
+  async: ^2.6.0
   express: ^4.12.4
   google-spreadsheets: '*'
   moment: ^2.22.1

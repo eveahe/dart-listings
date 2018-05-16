@@ -1,5 +1,4 @@
 /* styles */
-/* called by your view template */
 
 /*Designing for cell phones*/
 @media only screen and (max-width: 600px) {
@@ -11,11 +10,7 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
+main {
   font-family: 'Source Code Pro', monospace;
   margin: 10px;
   color: black;
@@ -38,37 +33,12 @@ h1 {
   font-size:80px;
   margin:30px;
   font-family: 'Plaster', cursive;
-/*   padding:24px; */
 } 
 
 h3 {
   color: #373fff;
   font-family: 'Source Code Pro', monospace;
 }
-
-#eventDetails {
-  font-family: monospace;
-  color: black;
-  
-}
-
-.eventDate {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-/* .eventName {
-  color: cornflowerblue;
-} */
-
-.eventDescription {
-  font-size: 12px;
-}
-
-.eventLocale {
-  font-weight: bold;
-}
-
 
 
 footer {
@@ -84,15 +54,10 @@ a {
   color: black;
 }
 
-/* footer > a {
-  color: #BBBBBB;
-} */
-
 .eventLink {
     display: inline-block;
     color: #000;
     text-decoration: none;
-/*     margin-bottom: 10px; */
 }
 
 .eventLink:hover {
@@ -103,36 +68,27 @@ a {
   background-color: yellow;
 }
 
-/* .eventLink::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #000;
-    transition: width .3s;
-    text-decoration: none;
+#eventDetails {
+  font-family: monospace;
+  color: black;
 }
 
-.eventLink:hover::after {
-    width: 100%;
-    transition: width .3s;
-    text-decoration: none;
-} */
+.eventDate {
+  font-size: 16px;
+  margin-top: 10px;
+}
 
-/* test animation for the second header */
-/* @keyframes example {
-    0%   {background-color:#373fff}
-    25%  {background-color:#5e65ff}
-    50%  {background-color:#858aff}
-    75%  {background-color:#adb0ff}
-    100% {background-color:#d4d6ff}
-} */
+.eventDescription {
+  font-size: 12px;
+}
 
-.testAnimation {
+.eventLocale {
+  font-weight: bold;
+}
+
+.subHeader {
   background-color: yellow;
   box-shadow: 5px 10px #888888;
-/*   animation-name: example;
-  animation-duration: 12s; */
   border-radius: 20px 20px;
   margin-top: 10px;
   padding: 10px;
@@ -152,7 +108,9 @@ a {
 .FontBulge:hover {
   -webkit-animation: FontBulge 1s;
   -moz-animation: FontBulge 1s;
+  color: red;
   }}
+
 @-webkit-keyframes FontBulge {
   0% {
     font-size: 60px;

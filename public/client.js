@@ -34,7 +34,7 @@ function writeEventsData(){
       dartName = value[2].value;
      
       //Write Event Link!!
-      //Note that item 4 is skipped because it's the description
+      //Note that item 4 is skipped because it's the description.
       dartLink = value[5].value;
       $("#eventDetails").append("<div class='eventLink eventName'><a href='" + dartLink + "'>" + dartName + "</a></div>");
        
@@ -47,21 +47,10 @@ function writeEventsData(){
     })})}
 
 
-
-// function reset(){
-//   $("#eventDetails").empty();
-//   $("#testName").empty();
-// }
-
 writeEventsData();
 
-// $("#reloadEvents").on("click", function(){
-//   reset();
-//   writeEventsData();
-// })
 
 /* To Do 
-- Understand how laggy this is, and what the lag is exactly!! Seems to be slow to update from GSheets. (It's not that it's slow, it's that it only loads when I restart the server...)
 - Continue working on designs....?
 - Figure out how to handle null cells!
 - Do I want to do an order by for dates in the google spreadsheet, or in the application?

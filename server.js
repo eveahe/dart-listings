@@ -19,6 +19,7 @@ GoogleSpreadsheets({
     });
 });
 
+//This should then check the API once a minute...I need to clean this bizness up.
 setInterval(function gs(){ 
   GoogleSpreadsheets({
     key: "1x1MvUF-dr_kuAMwAa9pLixZHdyoZD_HXI8YW-01KiQY"
@@ -26,7 +27,7 @@ setInterval(function gs(){
     spreadsheet.worksheets[0].cells({
     }, function(err, result) {
     	// Put in-memory store for now
-      console.log("now I'm testing this");
+      console.log("Just checking for updates over here.");
       events = result.cells;
     });
 });

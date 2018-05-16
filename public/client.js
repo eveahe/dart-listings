@@ -18,7 +18,8 @@ function checkDates(dartDate){
     return true;
   }}}
 
-//Writing all Event Data...currently though it's just writing event dates... 
+//Writing all Event Data.
+//This starts with dates because if the event was in the past it doesn't write it.
 function writeEventsData(){
   $.getJSON('/events', function(data){
     $.each(data, function(key,value){
@@ -28,11 +29,12 @@ function writeEventsData(){
       //Write Event Dates!!
       $("#eventDetails").append("<div class='eventDate'>" + dartDate + "</div>");
         
-      //Write Event Name!! 
+      //Set Event Name!! 
+      //The event name is now included in the event link. 
       dartName = value[2].value;
-//    $("#eventDetails").append("<div class='eventName'>" + dartName + "</div>");
-        
-      //Write Event Link!! 
+     
+      //Write Event Link!!
+      //Note that item 4 is skipped because it's the description
       dartLink = value[5].value;
       $("#eventDetails").append("<div class='eventLink eventName'><a href='" + dartLink + "'>" + dartName + "</a></div>");
        
@@ -40,11 +42,7 @@ function writeEventsData(){
       dartLocale = value[3].value;
       $("#eventDetails").append("<div class='eventLocale'>" + dartLocale + "</div>");
         
-        //This is commented out until I figure out how to handle nulls.
-      //Write Event Description!! 
-      // dartDescription = value[4].value;
-      // $("#eventDetails").append("<div class='eventDescription'>" + dartDescription + "</div>");
-        
+
       }//End CheckDates
     })})}
 

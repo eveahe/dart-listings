@@ -1,9 +1,22 @@
 /* styles */
+h1 {
+  color: #373fff;
+  font-size:80px;
+  margin:30px;
+  font-family: 'Plaster', cursive;
+} 
+
+h3 {
+  color: #373fff;
+  font-family: 'Source Code Pro', monospace;
+}
+
+
 
 /*Designing for cell phones*/
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   h3 {
     font-size: 15px;
@@ -27,19 +40,6 @@ main {
   max-width:70%;
   box-shadow: 5px 10px #888888;
 }
-
-h1 {
-  color: #373fff;
-  font-size:80px;
-  margin:30px;
-  font-family: 'Plaster', cursive;
-} 
-
-h3 {
-  color: #373fff;
-  font-family: 'Source Code Pro', monospace;
-}
-
 
 footer {
   font-family: monospace;

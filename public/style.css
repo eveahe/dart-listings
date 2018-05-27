@@ -6,6 +6,13 @@ h1 {
   font-family: 'Plaster', cursive;
 } 
 
+#circle {
+  background: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
 h3 {
   color: #373fff;
   font-family: 'Source Code Pro', monospace;

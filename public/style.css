@@ -8,17 +8,18 @@ h1 {
 
 .circle {
   border-radius: 50%;
+  margin-left: 20px;
 }
 
 #l-circle {
-  background: red;
+  background: yellow;
   height: 30px;
   width: 30px;
   display: inline-block;
 } 
 
 #s-circle {
-  background: white;
+  background: black;
   height: 10px;
   width: 10px;
   margin: 10px;
@@ -106,19 +107,22 @@ a {
 }
 
 .subHeader {
-  background-color: yellow;
+/*   background-color: yellow; */
+  border-color: yellow;
+  border-style: solid;
+  border-width: 2px;
   box-shadow: 5px 10px #888888;
   border-radius: 20px 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px;
   max-width: 70%;
 }
 
-.title{
-  background-color: pink;
+.titleBox{
+  background-color: white;
   box-shadow: 5px 10px #888888;
   border-radius: 20px 20px;
-  border: 1px solid red;
+  border: 2px solid red;
   max-width: 70%;
   display: flex;
   align-items: center;

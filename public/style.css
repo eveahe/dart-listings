@@ -40,6 +40,7 @@ h1 {
 
 h3 {
   color: #373fff;
+  font-size: 12px;
   font-family: 'Source Code Pro', monospace;
 }
 
@@ -154,6 +155,7 @@ a {
 
 
 @media only screen and (min-width: 600px){
+
 /*  .titleRow {
   display: flex;
   align-items: center;
@@ -161,7 +163,7 @@ a {
    */
   
 /* test font bulge */
-  
+ /*  
 .FontBulge:hover {
   -webkit-animation: FontBulge 1s;
   -moz-animation: FontBulge 1s;
@@ -194,4 +196,4 @@ a {
     height: 100px;
     width: 100px;
   }
-}
+} */

@@ -163,7 +163,7 @@ a {
    */
   
 /* test font bulge */
- /*  
+  
 .FontBulge:hover {
   -webkit-animation: FontBulge 1s;
   -moz-animation: FontBulge 1s;
@@ -176,14 +176,14 @@ a {
   20% {
     font-size: 80px;
     letter-spacing: 5px;
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
   }
   55% {
     font-size: 55px;
     letter-spacing: -5px;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     }
   80% {
     font-size: 70px;
@@ -196,4 +196,4 @@ a {
     height: 100px;
     width: 100px;
   }
-} */
+}

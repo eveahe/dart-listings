@@ -2,13 +2,21 @@
 h1 {
   color: #373fff;
   font-size:80px;
-  margin:30px;
+  margin-left:15px;
+  margin-bottom:20px;
+  margin-top:20px;
+  margin-right:20px;
   font-family: 'Plaster', cursive;
 } 
 
 .circle {
   border-radius: 50%;
   margin-left: 20px;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: center;
 }
 
 #l-circle {
@@ -126,12 +134,13 @@ a {
   max-width: 70%;
 }
 
-.titleRow {
-  display: flex;
-  align-items: center;
-}
 
 @media only screen and (min-width: 600px){
+ .titleRow {
+  display: flex;
+  align-items: center;
+} 
+  
 /* test font bulge */
 .FontBulge:hover {
   -webkit-animation: FontBulge 1s;

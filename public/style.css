@@ -25,16 +25,16 @@ h1 {
 
 #l-circle {
   background: yellow;
-  height: 90px;
-  width: 90px;
+  height: 50px;
+  width: 50px;
   display: inline-block;
 } 
 
 #s-circle {
   background: black;
-  height: 30px;
-  width: 30px;
-  margin: 22px;
+  height: 20px;
+  width: 20px;
+  margin: 20px;
   display: inline-block;
 }
 
@@ -153,27 +153,29 @@ a {
 
 @-webkit-keyframes FontBulge {
   0% {
-    font-size: 60px;
+/*     font-size: 60px; */
+    height: 50px;
+    width: 50px;
   }
   20% {
-    font-size: 80px;
-    letter-spacing: 5px;
+/*     font-size: 80px; */
+/*     letter-spacing: 5px; */
     height: 50px;
     width: 50px;
   }
   55% {
-    font-size: 55px;
-    letter-spacing: -5px;
+/*     font-size: 55px;
+    letter-spacing: -5px; */
     height: 60px;
     width: 60px;
     }
   80% {
-    font-size: 70px;
-    letter-spacing: 2px;
+/*     font-size: 70px;
+    letter-spacing: 2px; */
   }
   100% {
-    font-size: 60px;
-    height: 110px;
-    width: 110px;
+/*     font-size: 60px; */
+    height: 70px;
+    width: 70px;
   }
 }

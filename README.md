@@ -1,2 +1,2 @@
-# dart-listings
-Data &amp; art and technology listings around NYC.
+# DART Listings NYC
+Listing cool events around NYC.

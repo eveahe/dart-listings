@@ -1,0 +1,199 @@
+/* styles */
+h1 {
+  color: #373fff;
+  font-size:80px;
+  margin-bottom:15px;
+  margin-top:15px;
+  margin-right:15px;
+  margin-left:15px;
+  font-family: 'Plaster', cursive;
+} 
+
+.circle {
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.titleRow {
+  display: flex;
+/*   justify-content: center; */
+  align-items: center;
+/*   flex-direction: column; */
+}
+
+#l-circle {
+  background: yellow;
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+} 
+
+#s-circle {
+  background: black;
+  height: 30px;
+  width: 30px;
+/*   margin: 20px; */
+  display: inline-block;
+}
+
+h3 {
+  color: #373fff;
+  font-size: 12px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+
+
+/*Designing for cell phones*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+}
+
+main {
+  font-family: 'Source Code Pro', monospace;
+  margin: 10px;
+  color: black;
+  background-color: white;
+}
+
+#eventBody {
+  border-color: silver;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px 20px;
+  padding: 10px;
+  margin-right: 10px;
+  max-width:70%;
+  box-shadow: 5px 10px #888888;
+}
+
+footer {
+  font-family: monospace;
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+  max-width: 70%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.eventLink {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.eventLink:hover {
+  background-color: yellow;
+}
+
+.eventLink:after {
+  background-color: yellow;
+}
+
+#eventDetails {
+  font-family: monospace;
+  color: black;
+}
+
+.eventDate {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.eventDescription {
+  font-size: 12px;
+}
+
+.eventLocale {
+  font-weight: bold;
+}
+
+.subHeader {
+/*   background-color: yellow; */
+  border-color: yellow;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 5px 10px #888888;
+  border-radius: 20px 20px;
+  margin-top: 20px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.titleBox{
+  background-color: white;
+  box-shadow: 5px 10px #888888;
+  border-radius: 20px 20px;
+  border: 2px solid red;
+  max-width: 70%;
+}
+
+/* For only phone screens
+*/
+@media only screen and (max-width: 600px){
+ .titleRow {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} 
+}
+  
+
+/* For only computers or larger screens
+*/
+
+
+@media only screen and (min-width: 600px){
+
+/*  .titleRow {
+  display: flex;
+  align-items: center;
+} 
+   */
+  
+/* test font bulge */
+  
+.FontBulge:hover {
+  -webkit-animation: FontBulge 1s;
+  -moz-animation: FontBulge 1s;
+  }}
+
+@-webkit-keyframes FontBulge {
+  0% {
+    font-size: 60px;
+  }
+  20% {
+    font-size: 80px;
+    letter-spacing: 5px;
+    height: 55px;
+    width: 55px;
+  }
+  55% {
+    font-size: 55px;
+    letter-spacing: -5px;
+    height: 60px;
+    width: 60px;
+    }
+  80% {
+    font-size: 70px;
+    letter-spacing: 2px;
+    height: 80px;
+    width: 80px;
+  }
+  100% {
+    font-size: 60px;
+    height: 100px;
+    width: 100px;
+  }
+}

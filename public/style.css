@@ -100,7 +100,8 @@ a {
 }
 
 .eventName {
-   text-decoration: underline overline wavy blue;
+   text-decoration: underline overline wavy blue; 
+   /* border-bottom: 4px solid blue; */
    font-size: 16px; 
 }
 

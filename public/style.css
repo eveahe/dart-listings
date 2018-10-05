@@ -99,6 +99,10 @@ a {
   color: black;
 }
 
+.eventName {
+   font-size: 14px; 
+}
+
 .eventLink {
     display: inline-block;
     color: #000;

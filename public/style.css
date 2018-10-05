@@ -100,13 +100,14 @@ a {
 }
 
 .eventName {
-   font-size: 14px; 
+   text-decoration: underline overline wavy blue;
+   font-size: 16px; 
 }
 
 .eventLink {
     display: inline-block;
     color: #000;
-    text-decoration: none;
+/*    text-decoration: none; */
 }
 
 .eventLink:hover {

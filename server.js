@@ -30,7 +30,7 @@ setInterval(function gs(){
 });
 }, 60000);
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');

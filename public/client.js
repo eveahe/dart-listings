@@ -35,7 +35,7 @@ function writeEventsData(){
       dartLink = value[5].value;
       $("#eventDetails").append("<div class='eventLink eventName'><a href='" + dartLink + "'>" + dartName + "</a></div>");
        
-      //Set Event Descrip
+      //Set Event Description
       dartDescription = value[4].value;
       $("#eventDetails").append("<div class='eventDescription'>" + dartDescription + "</div>");  
           
@@ -48,9 +48,40 @@ function writeEventsData(){
       }//End CheckDates
     })})}
 
+function writeBerlinEventsData(){
+      $.getJSON('/berlinevents', function(data){
+        $.each(data, function(key,value){
+          //Write Event Date!!
+          dartDate = value[1].value;
+          if(checkDates(dartDate)){
+          //Write Event Dates!!
+          $("#berlinEventDetails").append("<div class='eventDate'>" + dartDate + "</div>");
+            
+          //Set Event Name!! 
+          //The event name is now included in the event link. 
+          dartName = value[2].value;
+        
+          //Write Event Link!!
+          dartLink = value[5].value;
+          $("#berlinEventDetails").append("<div class='eventLink eventName'><a href='" + dartLink + "'>" + dartName + "</a></div>");
+           
+          //Set Event Description
+          dartDescription = value[4].value;
+          $("#berlinEventDetails").append("<div class='eventDescription'>" + dartDescription + "</div>");  
+              
+            
+          //Write Event Locale!! 
+          dartLocale = value[3].value;
+          $("#berlinEventDetails").append("<div class='eventLocale'>" + dartLocale + "</div>");
+            
+    
+          }//End CheckDates
+        })})}
+
 
 writeEventsData();
 
+writeBerlinEventsData();
 
 /* To Do 
 - Figure out how to handle null cells!

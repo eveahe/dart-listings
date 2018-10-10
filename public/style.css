@@ -15,6 +15,15 @@ h1 {
   margin-right: 20px;
 }
 
+.city_button {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 20px 20px;
+  padding: 6px 6px 6px 6px;
+  font-family: 'Source Code Pro', monospace;
+}
+
 .titleRow {
   display: flex;
 /*   justify-content: center; */
@@ -45,7 +54,7 @@ h3 {
 
 
 
-/*Designing for cell phones*/
+/*Designing for anything larger than a cell phones*/
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 40px;

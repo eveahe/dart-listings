@@ -1,2 +1,2 @@
 # DART Listings NYC
-Listing cool events around NYC.
+Upcoming NYC events at the intersection of data, technology & art. 

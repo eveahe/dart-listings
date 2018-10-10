@@ -30,12 +30,16 @@ function writeEventsData(){
       //Set Event Name!! 
       //The event name is now included in the event link. 
       dartName = value[2].value;
-     
+    
       //Write Event Link!!
-      //Note that item 4 is skipped because it's the description.
       dartLink = value[5].value;
       $("#eventDetails").append("<div class='eventLink eventName'><a href='" + dartLink + "'>" + dartName + "</a></div>");
        
+      //Set Event Descrip
+      dartDescription = value[4].value;
+      $("#eventDetails").append("<div class='eventDescription'>" + dartDescription + "</div>");  
+          
+        
       //Write Event Locale!! 
       dartLocale = value[3].value;
       $("#eventDetails").append("<div class='eventLocale'>" + dartLocale + "</div>");

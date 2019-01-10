@@ -23,6 +23,15 @@ h1 {
 /*   flex-direction: column; */
 }
 
+.city_button {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 20px 20px;
+  padding: 6px 6px 6px 6px;
+  font-family: 'Source Code Pro', monospace;
+}
+
 #l-circle {
   background: yellow;
   height: 70px;
@@ -100,8 +109,8 @@ a {
 }
 
 .eventName {
-   text-decoration: underline overline wavy blue; 
-   /* border-bottom: 4px solid blue; */
+   /* text-decoration: underline overline wavy blue; */
+   border-bottom: 4px solid blue;
    font-size: 16px; 
 }
 

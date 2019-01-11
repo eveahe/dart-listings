@@ -6,7 +6,8 @@ var async = require('async');
 var events;
 var berlinevents;
 
-//Loading data from Google Sheet
+//Loading data from Google Sheet. 
+//The Google Sheet has to be published to the web for this to work.
 GoogleSpreadsheets({
     key: "1x1MvUF-dr_kuAMwAa9pLixZHdyoZD_HXI8YW-01KiQY"
 }, function(err, spreadsheet) {
@@ -22,7 +23,8 @@ GoogleSpreadsheets({
     });
 });
 
-//This should then check the API once a minute...I need to clean this bizness up.
+//This should then check the API once a minute to see if there's newly entered events...I need to clean this bizness up.
+  //Note that the below is hardcoded to assume that NYC events are in the first worksheet, and Berlin events are in the second. 
 setInterval(function gs(){ 
   GoogleSpreadsheets({
     key: "1x1MvUF-dr_kuAMwAa9pLixZHdyoZD_HXI8YW-01KiQY"

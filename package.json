@@ -9,8 +9,7 @@
   "dependencies": {
     "express": "^4.12.4",
     "google-spreadsheets": "*",
-    "moment": "^2.22.1",
-    "async": "^2.6.0"
+    "jstoxml": "^1.6.0"
   },
   "engines": {
     "node": "8.x"

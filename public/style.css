@@ -1,14 +1,49 @@
 /* styles */
 h1 {
   color: #373fff;
-  font-size:80px;
-  margin-bottom:15px;
-  margin-top:15px;
-  margin-right:15px;
-  margin-left:15px;
-  font-family: 'Plaster', cursive;
-} 
+  font-size: 80px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-family: "Plaster", cursive;
+}
 
+nav {
+  margin-top: 30px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 10px #888888;
+  border-radius: 20px 20px;
+  border: 2px solid red;
+}
+
+ul.nav {
+    margin:0;
+    padding:0;
+    list-style:none;
+  /* height:36px;  */
+    line-height:36px; 
+    font-family: "Source Code Pro", monospace;
+    font-size: larger;
+}
+ul.nav li {
+   /* border-right:1px solid red; you can change the border color matching to your background color */
+    float:left;
+}
+ul.nav a {
+    display:block;
+    padding:0 28px;  
+    color: blue;
+    text-decoration:none;
+}
+
+ul.nav a:hover,
+ul.nav li.current a {
+    color: grey;
+}
 .circle {
   border-radius: 50%;
   margin-left: 20px;
@@ -18,9 +53,9 @@ h1 {
 
 .titleRow {
   display: flex;
-/*   justify-content: center; */
+  /*   justify-content: center; */
   align-items: center;
-/*   flex-direction: column; */
+  /*   flex-direction: column; */
 }
 
 .city_button {
@@ -29,7 +64,7 @@ h1 {
   font-size: 12px;
   border-radius: 20px 20px;
   padding: 6px 6px 6px 6px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 #l-circle {
@@ -37,23 +72,21 @@ h1 {
   height: 70px;
   width: 70px;
   display: inline-block;
-} 
+}
 
 #s-circle {
   background: black;
   height: 30px;
   width: 30px;
-/*   margin: 20px; */
+  /*   margin: 20px; */
   display: inline-block;
 }
 
 h3 {
   color: #373fff;
   font-size: 12px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
-
-
 
 /*Designing for cell phones*/
 @media only screen and (max-width: 600px) {
@@ -63,22 +96,33 @@ h3 {
   h3 {
     font-size: 15px;
   }
-  
+  nav {
+    font-size: 10px;
+    width: 90%;
+  }
+  li {
+    width: 90%;
+  }
   .titleBox {
     max-width: 90% !important;
   }
-  
+
   #eventBody {
     max-width: 90% !important;
   }
-  
+
   footer {
     max-width: 90% !important;
+  }
+  .titleRow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
 main {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   margin: 10px;
   color: black;
   background-color: white;
@@ -91,7 +135,7 @@ main {
   border-radius: 20px 20px;
   padding: 10px;
   margin-right: 10px;
-  max-width:70%;
+  max-width: 70%; 
   box-shadow: 5px 10px #888888;
 }
 
@@ -109,15 +153,15 @@ a {
 }
 
 .eventName {
-   /* text-decoration: underline overline wavy blue; */
-   border-bottom: 4px solid blue;
-   font-size: 16px; 
+  /* text-decoration: underline overline wavy blue; */
+  border-bottom: 4px solid blue;
+  font-size: 16px;
 }
 
 .eventLink {
-    display: inline-block;
-    color: #000;
-/*    text-decoration: none; */
+  display: inline-block;
+  color: #000;
+  /*    text-decoration: none; */
 }
 
 .eventLink:hover {
@@ -147,7 +191,6 @@ a {
 }
 
 .subHeader {
-/*   background-color: yellow; */
   border-color: yellow;
   border-style: solid;
   border-width: 2px;
@@ -158,7 +201,7 @@ a {
   max-width: 100%;
 }
 
-.titleBox{
+.titleBox {
   background-color: white;
   box-shadow: 5px 10px #888888;
   border-radius: 20px 20px;
@@ -166,35 +209,12 @@ a {
   max-width: 70%;
 }
 
-/* For only phone screens
-*/
-@media only screen and (max-width: 600px){
- .titleRow {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-} 
+@media only screen and (min-width: 600px) {
+  .FontBulge:hover {
+    -webkit-animation: FontBulge 1s;
+    -moz-animation: FontBulge 1s;
+  }
 }
-  
-
-/* For only computers or larger screens
-*/
-
-
-@media only screen and (min-width: 600px){
-
-/*  .titleRow {
-  display: flex;
-  align-items: center;
-} 
-   */
-  
-/* test font bulge */
-  
-.FontBulge:hover {
-  -webkit-animation: FontBulge 1s;
-  -moz-animation: FontBulge 1s;
-  }}
 
 @-webkit-keyframes FontBulge {
   0% {
@@ -211,7 +231,7 @@ a {
     letter-spacing: -5px;
     height: 60px;
     width: 60px;
-    }
+  }
   80% {
     font-size: 70px;
     letter-spacing: 2px;
